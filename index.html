@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Library Management System</h1>
+    
+    <!-- Display Books -->
+    <div id="book-list">
+      <h2>Book List</h2>
+      <ul id="books"></ul>
+    </div>
+
+    <!-- Add New Book Form -->
+    <div id="add-book-form">
+      <h2>Add New Book</h2>
+      <form id="new-book-form">
+        <label for="bookName">Book Name:</label>
+        <input type="text" id="bookName" required>
+        
+        <label for="isbn">ISBN:</label>
+        <input type="text" id="isbn" required>
+        
+        <label for="author">Author:</label>
+        <input type="text" id="author" required>
+
+        <label for="publishedDate">Published Date:</label>
+        <input type="date" id="publishedDate" required>
+        
+        <label for="purchaseDate">Date of Purchase:</label>
+        <input type="date" id="purchaseDate" required>
+
+        <button type="submit">Add Book</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
